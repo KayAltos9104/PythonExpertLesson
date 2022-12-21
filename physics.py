@@ -1,6 +1,5 @@
 import math
 
-
 class Vector2D:
     def __init__(self, x, y):
         self.X = x
@@ -28,7 +27,6 @@ class Vector2D:
     def get_distance(vector1, vector2):
         return Vector2D.diff(vector1, vector2).get_module()
 
-
 class CircleCollider():
     def __init__(self, r, center):
         self.radius = r
@@ -36,4 +34,6 @@ class CircleCollider():
 
     @staticmethod
     def is_intersects(circle1, circle2):
+        #print(circle1.center)
+        #print(circle2.center)
         return circle1.radius+circle2.radius >= Vector2D.get_distance(circle1.center, circle2.center)

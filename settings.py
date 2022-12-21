@@ -2,5 +2,7 @@ WIDTH = 800
 HEIGHT = 600
 FPS = 60
 WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+RED = (255, 0, 0)
 BLACK = (0, 0, 0)
 SCALE = 100
